@@ -1,0 +1,29 @@
+<?xmlversion="1.0"encoding="UTF-8"?>
+<soapenv:Envelopexmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"xmlns:xsd="http://www.w3.org/2001/XMLSchema"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <m:Addressxmlns:m="http://active.com.cn/sndp/"soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next"soapenv:mustUnderstand="0">172.26.124.165</m:Address>
+        <m:MessageIDxmlns:m="http://active.com.cn/sndp/"soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next"soapenv:mustUnderstand="0"></m:MessageID>
+        <m:Passwordxmlns:m="http://active.com.cn/sndp/"soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next"soapenv:mustUnderstand="0">7fde4f091cc9d6a5bbbe599e9ef9d784</m:Password>
+        <m:Usernamexmlns:m="http://active.com.cn/sndp/"soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next"soapenv:mustUnderstand="0">zte</m:Username>
+    </soapenv:Header>
+    <soapenv:Body>
+        <rootxmlns="http://active.com.cn/sndp/">
+            <msg_headxmlns="">
+                <from>INAS</from>
+                <to>NPI</to>
+                <msg_type>message_request</msg_type>
+            </msg_head>
+            <interface_msgxmlns="">
+                <directive>
+                    <ServiceClassName="CSService">
+                        <ServiceSubClassName="CSSndpUserService">
+                            <MethodName="DelSndpUser">
+                                <USERNUM>05523074578</USERNUM>
+                            </Method>
+                        </ServiceSubClass>
+                    </ServiceClass>
+                </directive>
+            </interface_msg>
+        </root>
+    </soapenv:Body>
+</soapenv:Envelope>
